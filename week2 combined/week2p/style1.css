@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('nawa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container-satu {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: auto;
+    border-radius: 15px;
+}
+
+.sidebar-satu, .sidebar-dua {
+    width: 20%;
+    padding: 10px;
+    background-color: rgba(0, 0, 50, 0.3);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+    border-radius: 10px;
+}
+
+.judul-artikel {
+    width: 55%;
+    padding: 10px;
+    background-color: rgba(0, 0, 50, 0.3);
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.7);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-satu ul {
+    list-style-type: none;
+}
+
+.sidebar-satu ul li {
+    margin: 10px 0;
+}
+
+.sidebar-satu ul li a {
+    text-decoration: none;
+    color: #00bfff;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.sidebar-dua p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.judul-artikel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00bfff;
+    text-shadow: 0 0 10px rgba(0, 150, 255, 0.8);
+}
+
+.judul-artikel p {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 1152px) {
+    .container-satu {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .sidebar-satu, .sidebar-dua {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .judul-artikel {
+        width: 100%;
+    }
+}
