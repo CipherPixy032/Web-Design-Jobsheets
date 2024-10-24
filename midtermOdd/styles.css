@@ -1,0 +1,64 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex growth for main content container */
+.container {
+    flex: 1; /* Allows the container to grow and take available space */
+    padding-bottom: 50px; /* Add padding to avoid content being blocked by the footer */
+}
+
+/* Footer styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto; /* Push footer to the bottom only when content is short */
+}
+
+/* Login container styling */
+.login-container {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form group and error styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 0.85em;
+}
+
+/* Banner slider styling */
+.banner-slider img {
+    width: 100%;
+    height: auto;
+}
+
+/* Background overlay */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
